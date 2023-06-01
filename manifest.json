@@ -1,0 +1,14 @@
+{
+    "name": "GPT Chrome Extension",
+    "version": "1.0",
+    "description": "A Chrome extension that uses the GPT model to summarize, paraphrase, and check AI content in web pages.",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["contentscript.js"]
+    }],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["tabs"]
+}
